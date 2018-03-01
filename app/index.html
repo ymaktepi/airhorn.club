@@ -1,22 +1,23 @@
 <!doctype html>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<html lang="en" onclick="play()">
 
-  <title>airhorn.wav</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>airhorn.wav</title>
+    <link rel="stylesheet" type="text/css" href="./src/airhorn.css">
 </head>
 
 <body>
-
-<input type="button" value="PLAY"  onclick="play()">
-<audio id="audio" src="./src/airhorn.wav" ></audio>
+    <audio id="airhorn" src="./src/airhorn.wav"></audio>
 </body>
 
-    <script>
- function play(){
-      var audio = document.getElementById("audio");
-      audio.play();
-                }
-  </script>
+<script>
+    var airhorn = document.getElementById("airhorn");
+    function play() {
+        airhorn.play();
+    }
+</script>
+
 </html>
