@@ -3,12 +3,12 @@ services:
 
 ### Application Code Container
 
-  plome_application:
-      container_name: plome_app
+  airhorn_application:
+      container_name: airhorn_app
 #you can comment out the next line
       restart: always
       build: .
-      image: plome/plome_app
+      image: airhorn/airhorn_app
       volumes:
         - ./app:/usr/share/nginx/html
       ports:
